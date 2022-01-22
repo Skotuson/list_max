@@ -131,15 +131,8 @@ void test_max ( TITEM * ref, TITEM * act ) {
 }
 
 int main ( void ) {
-    TITEM * x[100];
+    TITEM * x[150];
     int nr;
-
-    nr = 3;
-    x[0] = parseList ( "091" );
-    x[1] = parseList ( "0097" ); 
-    x[2] = parseList ( "113" );
-    test_max ( parseList ( "113" ), maxOf ( x, nr ) );
-    deleteListArr ( x, nr );
 
     printf( "Passed:%d\nFailed:%d\n", g_Ok, g_Fail );
     return 0;
